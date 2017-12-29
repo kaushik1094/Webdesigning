@@ -1,0 +1,31 @@
+# Webdesigning
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(#000000, #D52B1E);
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	font-family: 'Space Mono', monospace;
+}
+
+.unit {
+	color: rgba(0, 0, 0, 0.75);
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 0.125rem;
+	padding: 2rem;
+	text-align: center;
+	
+	&:before {
+		color: rgba(255, 255, 255, 0.5);
+		font-size: 7.25rem;
+		content: attr(data-content);
+		display: block;
+		text-align: center;
+		padding-bottom: 1rem;
+	}
+}
